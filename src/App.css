@@ -1,38 +1,125 @@
 .App {
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+.title{
+  font-size: 30px;
+  margin-right: auto;
+  margin-left: 7%;
+}
+.searchBar{
+  width: 450px;
+  height: 25px;
+  border-radius: 25px;
+  margin-right: auto;
+  margin-left: 5%;
+ 
+}
+.TaskCounter{
+  width: 480px; 
+  height: 30px;
   text-align: center;
+  line-height: 30px;
+  border-radius: 15px;
+  background: rgb(0, 255, 153);
+  margin: 20px;
+  padding: 5px;
+ 
+}
+.TaskList{
+  width: 300px;
+  margin: 20px;
+  font-family: Arial;
+  line-height: 10px;
+}
+.noTareas{
+  width: 480px; 
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 15px;
+  background: rgb(91, 183, 235 );
+  margin: 20px;
+  padding: 5px;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Task{
+  width: 475px;
+  height: 20px;
+  margin: 10px;
+  margin-right:auto;
+  margin-left: 1%;
+  padding: 5px;
+  box-shadow: 6px 5px 21px 2px rgba(0,0,0,0.84);
+  border-radius: 10px;
+  
+}
+.textTask{
+  width: 150px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.buttonTask1{
+  display:inline;
+  padding-left: 15%;
+  padding-right: 1%;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.buttonTask2{
+  display:inline;
+  padding-right: 1%;
+    
   }
-  to {
-    transform: rotate(360deg);
-  }
+input[type=checkbox]:checked + span.textTask{
+  text-decoration:line-through;
 }
+
+
+.newToDo{
+  width: 450px;
+  height: 25px;
+  border-radius: 25px;
+  margin-right: auto;
+  margin-left: 5%;
+
+}
+
+.tasksDone {
+  width: 480px; 
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 15px;
+  background: rgb(190, 226, 246 );
+  margin: 20px;
+  padding: 5px;
+}
+.OverWork{
+  width: 480px; 
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 15px;
+  background: rgb(91, 183, 235 );
+  margin: 20px;
+  padding: 5px;
+ 
+  
+}
+
+.Avatar{
+  width: 50px;
+  height: 50px;
+  border-radius: 2500px;
+  text-align: right;
+    
+  }
+.pagesFooter{
+  display:flex;
+  margin: 2px;
+  padding:2px;
+}
+
+
+

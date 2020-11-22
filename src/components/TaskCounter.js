@@ -1,19 +1,20 @@
-import React from 'react';
-import data from '../tasks.json';
+import React from "react";
 
 
-
-const TaskCounter = (props) => {
+const TaskCounter = ({tasks}) => {
   
-    const tasks = data.tasks;
-    const notDone = tasks.filter(task => !task.done).length;
-    
-    return(
-      <div className='TaskCounter'>
-        {notDone} tasks left of {data.tasks.length}
-            
-      </div>
-    )
-  };
-  
-  export default TaskCounter;
+  let totalTask = tasks.taskList.length+1;
+  const notDone = tasks.taskList.filter(task => !task.done).length;
+
+  if(totalTask-1 === notDone){
+    totalTask = notDone;
+  }
+
+  return (
+    <div className="TaskCounter">
+      {notDone} tasks left of {totalTask}
+    </div>
+  );
+};
+
+export default TaskCounter;
